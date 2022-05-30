@@ -1,17 +1,12 @@
 {
-	"name": "stable-fn",
+	"name": "stable-fn-cjs",
 	"version": "3.0.0",
-	"description": "Ensure a function is stable, meaning the same input always produces the same output",
+	"description": "Ensure a function is stable, meaning the same input always produces the same output (commonjs)",
 	"license": "MIT",
-	"repository": "sindresorhus/stable-fn",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
-	"exports": "./index.js",
+	"repository": "Loupi/stable-fn",
+	"author": "Louis-Pierre Beaumont",
+	"main": "./index.js",
+	"types": "./index.d.ts",
 	"engines": {
 		"node": ">=12"
 	},
@@ -37,5 +32,10 @@
 		"ava": "^3.15.0",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
+	},
+	"xo": {
+    "rules": {
+      "unicorn/prefer-module": 0
+    }
 	}
 }
