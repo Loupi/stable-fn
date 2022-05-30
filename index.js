@@ -21,4 +21,4 @@ function internal(shouldReturnValue, count, testFunction) {
 const stableFunction = internal.bind(null, false);
 stableFunction.returnValue = internal.bind(null, true);
 
-export default stableFunction;
+module.exports = stableFunction;

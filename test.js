@@ -1,5 +1,5 @@
-import test from 'ava';
-import stableFunction from './index.js';
+const test = require('ava');
+const stableFunction = require('./index.js');
 
 test('stableFunction()', t => {
 	t.true(stableFunction(() => true));
